@@ -1,0 +1,15 @@
+Sau đây là hướng dẫn cài đặt và chạy phần mềm chat
+1. Tải và cài đặt nodejs ở đường link: https://nodejs.org/en/download/
+2. Mở Command Promt, đưa đường dẫn vào thư mục Server
+3. Chạy câu lệnh sau để khởi động Server:
+node index.js
+4. Mở trình duyệt và truy cập vào địa chỉ: 
+https://localhost:822
+5. Nhập tên đăng nhập và sử dụng
+
+
+Để có thể cài đặt phần mềm chat trong một mạng cục bộ (local network) thì ta làm các bước sau
+1. Mở Command Promt của hệ thống, chạy câu lệnh IPconfig để tìm IP/V4 của máy tính và lưu IP/V4 đó lại
+2. Mở file handle.js ở trong folder theo đường dẫn /server/public 
+3. Tìm đến dòng đầu tiên trong file handle.js (var socket = io("http://localhost:822"); ), lúc này thay đổi phần localhost thành IP/V4 đã được lưu lại trước đó. Và lưu lại file
+4. Làm lại các bước giống như bình thường ở phía trên

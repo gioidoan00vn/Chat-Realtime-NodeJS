@@ -1,0 +1,54 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<meta charset="=utf-8">
+		<title>Chat Realtime</title>
+		<script src="jquery.js"></script>
+		<script src="socket.io/socket.io.js"></script>
+		<script src="handle.js"></script>
+		<link rel="stylesheet" type="text/css" href="layout.css" />	
+		<script src="/socket.io/socket.io.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="Wrapper">
+			<div id="loginForm">
+				<h3>WHAT'S YOUR NAME?</h3>
+				<input type="text" name="" id="txtUsername">
+				<input type="button" name="" value="Register" id="btnRegister">
+			</div>
+			<div id="chatForm">
+				<div id="main-header">
+					<h3 id="web-title">CHAT REALTIME</h3>
+					<div id="sayHi">
+							<i>Hello <b><span id="currentUser"></span></b></i>
+							<br>
+							<input type="button" id="btnLogout" value="Logout">
+					</div>
+					<div class="clearfloat"></div>
+				</div>
+				<div id="left">
+					<div id="boxTitle">
+						User Online
+					</div>
+					<div id="boxContent">
+						
+					</div>
+				</div>
+				<div id="right">
+					<!-- <div id="sayHi">
+						<i>Hello <b><span id="currentUser"></span></b></i>
+						<br>
+						<input type="button" id="btnLogout" value="Logout">
+					</div> -->
+					<div id="listMessages">
+
+					</div>
+					<input type="text" name="" id="txtMessage">
+					<input type="button" name="" id="btnSend" value="Send">
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+body{background-image: url("background.jpg") ;}
+#wrapper{width: 80%;margin: auto;}
+#txtUsername{background-color: transparent;border: solid 1px black;}
+#left,#right:{min-height: 300px;}
+#left{width: 29%;float: left;background-color: #d4fcff;}
+#right{
+	margin-bottom: 10px;
+	height: 90%;
+	width: 70%;
+	float: right;
+	background-color: #e9ffd4;
+}
+#boxTitle{
+	border:solid 1px black;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+#boxContent{
+	border:solid 1px black;
+	border-top: none;
+	padding:5px;
+	text-align: center;
+	overflow: scroll;
+}
+#listMessages{
+	color:white;
+	height: 95%;
+	background-image: url("chat.jpg");
+	overflow: scroll;
+}
+#txtMessage{
+	border:solid 1px black;
+	background-color: white;
+}
+#sayHi{
+	float:right;
+}
+#web-title{
+	float:left;
+}
+.clearfloat{
+	clear:left;
+}
+#btnSend,#txtMessage{
+	
+}
+@media screen and (max-width: 600px) {
+	#wrapper{
+		width: 100%;
+	}
+}
